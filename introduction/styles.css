@@ -1,0 +1,396 @@
+body {
+    font-family: "Gamja Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: url('background.png') no-repeat center center fixed;
+    background: linear-gradient(to bottom, #ffd1dc, #ffeeef);
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    gap: 100px; 
+}
+.snowflake {
+    --size: 2vw;
+    font-size: var(--size);
+    color: white;
+    position: absolute;
+    top: -5vh;
+    text-align: center;
+    animation: snowfall 12s linear infinite;
+    animation-delay: -10s;
+    transform: translate3d(var(--left-ini), 0, 0);
+}
+
+.snowflake::before {
+    content: "❤︎";
+    display: inline-block;
+}
+@keyframes snowfall {
+    0% {
+        transform: translate3d(var(--left-ini), 0, 0);
+   }
+    100% {
+        transform: translate3d(var(--left-end), 110vh, 0);
+   }
+}
+.snowflake:nth-child(1) {
+    --size: 1vw;
+    --left-ini: -8vw;
+    --left-end: 3vw;
+    left: 21vw;
+    animation: snowfall 12s linear infinite;
+    animation-delay: -10s;
+}
+.snowflake:nth-child(2) {
+    --size: 0.6vw;
+    --left-ini: 2vw;
+    --left-end: 10vw;
+    left: 17vw;
+    animation: snowfall 9s linear infinite;
+    animation-delay: -9s;
+}
+.snowflake:nth-child(3) {
+    --size: 0.8vw;
+    --left-ini: -5vw;
+    --left-end: -7vw;
+    left: 78vw;
+    animation: snowfall 12s linear infinite;
+    animation-delay: -1s;
+}
+.snowflake:nth-child(4) {
+    --size: 0.2vw;
+    --left-ini: -1vw;
+    --left-end: -9vw;
+    left: 57vw;
+    animation: snowfall 6s linear infinite;
+    animation-delay: -9s;
+}
+.snowflake:nth-child(5) {
+    --size: 0.2vw;
+    --left-ini: 9vw;
+    --left-end: -1vw;
+    left: 39vw;
+    animation: snowfall 10s linear infinite;
+    animation-delay: -3s;
+}
+.snowflake:nth-child(6) {
+    --size: 0.8vw;
+    --left-ini: 3vw;
+    --left-end: -6vw;
+    left: 60vw;
+    animation: snowfall 10s linear infinite;
+    animation-delay: -1s;
+}
+.snowflake:nth-child(7) {
+    --size: 1vw;
+    --left-ini: -1vw;
+    --left-end: -4vw;
+    left: 89vw;
+    animation: snowfall 6s linear infinite;
+    animation-delay: -8s;
+}
+.snowflake:nth-child(8) {
+    --size: 1vw;
+    --left-ini: -4vw;
+    --left-end: -7vw;
+    left: 33vw;
+    animation: snowfall 11s linear infinite;
+    animation-delay: -2s;
+}
+.snowflake:nth-child(9) {
+    --size: 1vw;
+    --left-ini: -4vw;
+    --left-end: -4vw;
+    left: 78vw;
+    animation: snowfall 10s linear infinite;
+    animation-delay: -5s;
+}
+.snowflake:nth-child(10) {
+    --size: 0.6vw;
+    --left-ini: -3vw;
+    --left-end: 1vw;
+    left: 73vw;
+    animation: snowfall 15s linear infinite;
+    animation-delay: -7s;
+}
+.snowflake:nth-child(11) {
+    --size: 0.4vw;
+    --left-ini: 6vw;
+    --left-end: -1vw;
+    left: 62vw;
+    animation: snowfall 8s linear infinite;
+    animation-delay: -8s;
+}
+.snowflake:nth-child(12) {
+    --size: 0.4vw;
+    --left-ini: -1vw;
+    --left-end: 1vw;
+    left: 46vw;
+    animation: snowfall 14s linear infinite;
+    animation-delay: -10s;
+}
+.snowflake:nth-child(13) {
+    --size: 0.8vw;
+    --left-ini: 5vw;
+    --left-end: 0vw;
+    left: 28vw;
+    animation: snowfall 9s linear infinite;
+    animation-delay: -5s;
+}
+.snowflake:nth-child(14) {
+    --size: 0.8vw;
+    --left-ini: 0vw;
+    --left-end: -8vw;
+    left: 96vw;
+    animation: snowfall 9s linear infinite;
+    animation-delay: -5s;
+}
+.snowflake:nth-child(15) {
+    --size: 1vw;
+    --left-ini: 9vw;
+    --left-end: 4vw;
+    left: 48vw;
+    animation: snowfall 8s linear infinite;
+    animation-delay: -5s;
+}
+.snowflake:nth-child(16) {
+    --size: 0.6vw;
+    --left-ini: -2vw;
+    --left-end: 6vw;
+    left: 42vw;
+    animation: snowfall 11s linear infinite;
+    animation-delay: -3s;
+}
+.snowflake:nth-child(17) {
+    --size: 0.8vw;
+    --left-ini: -5vw;
+    --left-end: -5vw;
+    left: 11vw;
+    animation: snowfall 15s linear infinite;
+    animation-delay: -4s;
+}
+.snowflake:nth-child(18) {
+    --size: 1vw;
+    --left-ini: -5vw;
+    --left-end: 2vw;
+    left: 21vw;
+    animation: snowfall 6s linear infinite;
+    animation-delay: -5s;
+}
+.snowflake:nth-child(19) {
+    --size: 0.6vw;
+    --left-ini: -6vw;
+    --left-end: 0vw;
+    left: 66vw;
+    animation: snowfall 14s linear infinite;
+    animation-delay: -5s;
+}
+.snowflake:nth-child(20) {
+    --size: 0.8vw;
+    --left-ini: 7vw;
+    --left-end: -5vw;
+    left: 20vw;
+    animation: snowfall 9s linear infinite;
+    animation-delay: -4s;
+}
+.snowflake:nth-child(21) {
+    --size: 1vw;
+    --left-ini: 5vw;
+    --left-end: -9vw;
+    left: 50vw;
+    animation: snowfall 13s linear infinite;
+    animation-delay: -2s;
+}
+.snowflake:nth-child(22) {
+    --size: 0.8vw;
+    --left-ini: 3vw;
+    --left-end: 5vw;
+    left: 16vw;
+    animation: snowfall 12s linear infinite;
+    animation-delay: -8s;
+}
+.snowflake:nth-child(23) {
+    --size: 0.2vw;
+    --left-ini: -1vw;
+    --left-end: 5vw;
+    left: 89vw;
+    animation: snowfall 15s linear infinite;
+    animation-delay: -2s;
+}
+.snowflake:nth-child(24) {
+    --size: 0.2vw;
+    --left-ini: -8vw;
+    --left-end: -9vw;
+    left: 36vw;
+    animation: snowfall 13s linear infinite;
+    animation-delay: -9s;
+}
+.snowflake:nth-child(25) {
+    --size: 0.2vw;
+    --left-ini: -6vw;
+    --left-end: 0vw;
+    left: 100vw;
+    animation: snowfall 8s linear infinite;
+    animation-delay: -3s;
+}
+.snowflake:nth-child(26) {
+    --size: 1vw;
+    --left-ini: -4vw;
+    --left-end: 3vw;
+    left: 72vw;
+    animation: snowfall 9s linear infinite;
+    animation-delay: -3s;
+}
+.snowflake:nth-child(27) {
+    --size: 0.8vw;
+    --left-ini: -1vw;
+    --left-end: 0vw;
+    left: 23vw;
+    animation: snowfall 14s linear infinite;
+    animation-delay: -1s;
+}
+.snowflake:nth-child(28) {
+    --size: 0.2vw;
+    --left-ini: 8vw;
+    --left-end: -5vw;
+    left: 37vw;
+    animation: snowfall 13s linear infinite;
+    animation-delay: -5s;
+}
+.snowflake:nth-child(29) {
+    --size: 1vw;
+    --left-ini: 9vw;
+    --left-end: 8vw;
+    left: 61vw;
+    animation: snowfall 12s linear infinite;
+    animation-delay: -1s;
+}
+.snowflake:nth-child(30) {
+    --size: 1vw;
+    --left-ini: -4vw;
+    --left-end: -1vw;
+    left: 59vw;
+    animation: snowfall 11s linear infinite;
+    animation-delay: -10s;
+}
+
+/* 자기소개 컨테이너 */
+.intro-container {
+    position: relative;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+  }
+
+  .intro-container::before {
+    content: "🎀";
+    position: absolute;
+    top: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 80px;
+}
+
+  /* 사진 스타일 */
+  .intro-photo {
+    flex: 1;
+    text-align: center;
+  }
+  .intro-photo img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+  
+/* 정보 섹션 스타일 */
+.intro-info {
+    flex: 2;
+    padding-left: 20px;
+  }
+  
+  .intro-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .intro-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .intro-info ul li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .intro-info ul li span {
+    font-weight: bold;
+    color: #f59bb9;
+  }
+
+  /* 자기소개 컨테이너 */
+.intro-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px; 
+    height: 300px; 
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+/* 공유 컨테이너 */
+.share-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 300px; 
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+  /* 음식 스타일 */
+  .food-photo {
+    flex: 1;
+    text-align: center;
+  }
+  .food-photo img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+  
+  /* 공유 정보 섹션 스타일 */
+  .share-info {
+    flex: 2;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #555;
+    font-size: 1.2rem;
+  }
+
+  .share-info span {
+    color: #f59bb9;
+  }
